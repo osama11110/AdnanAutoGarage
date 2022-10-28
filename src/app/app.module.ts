@@ -10,6 +10,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { OffersComponent } from './offers/offers.component';
+import { OilChangeOfferComponent } from './oil-change-offer/oil-change-offer.component';
+import { FreeCarInspectionComponent } from './free-car-inspection/free-car-inspection.component';
 
 const appRoutes : Routes = [
   {path: 'home', component: HomeComponent },
@@ -17,6 +19,8 @@ const appRoutes : Routes = [
   {path: 'about-us', component: AboutUsComponent},
   {path: 'contact-us', component: ContactUsComponent},
   {path: 'offers', component: OffersComponent},
+  {path: 'oil-change-offer', component: OilChangeOfferComponent},
+  {path: 'free-car-inspection', component: FreeCarInspectionComponent},
   { path: '', redirectTo:'/home', pathMatch: 'full'}
 ];
 
@@ -29,7 +33,9 @@ const appRoutes : Routes = [
     ContactUsComponent,
     HeaderComponent,
     FooterComponent,
-    OffersComponent
+    OffersComponent,
+    OilChangeOfferComponent,
+    FreeCarInspectionComponent
   ],
   imports: [
     BrowserModule,
